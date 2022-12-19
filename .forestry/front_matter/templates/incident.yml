@@ -4,22 +4,32 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Titre
+  config:
+    required: true
 - type: datetime
   name: date
-  label: date
+  label: Date
+  config:
+    required: true
 - type: boolean
   name: resolved
-  label: resolved
+  label: Résolu
 - type: datetime
   name: resolvedWhen
-  label: resolvedWhen
+  label: Date de résolution
+  hidden: false
+  showOnly:
+    field: resolved
+    value: true
 - type: text
   name: severity
   label: severity
 - type: list
   name: affected
-  label: affected
+  label: Service impacté
 - type: text
   name: section
   label: section
+  config:
+    required: true
