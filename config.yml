@@ -43,7 +43,7 @@ params:
   description: We continuously monitor the status of our services and if there are
     any interruptions, a note will be posted here.
   disableComplexCalculations: false
-  incidentPostsPerPage: "10"
+  incidentPostsPerPage: '10'
   brand: "#0a0c0f"
   ok: "#008000"
   disrupted: "#cc4400"
