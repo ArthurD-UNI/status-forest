@@ -1,0 +1,25 @@
+---
+label: Incident
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: boolean
+  name: resolved
+  label: resolved
+- type: datetime
+  name: resolvedWhen
+  label: resolvedWhen
+- type: text
+  name: severity
+  label: severity
+- type: list
+  name: affected
+  label: affected
+- type: text
+  name: section
+  label: section
