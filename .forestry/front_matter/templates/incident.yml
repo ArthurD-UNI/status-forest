@@ -41,7 +41,7 @@ fields:
   name: affected
   label: Service impacté
   config:
-    use_select: true
+    use_select: false
     source:
       type: documents
       section: configuration
