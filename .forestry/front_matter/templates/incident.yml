@@ -22,9 +22,21 @@ fields:
   showOnly:
     field: resolved
     value: true
-- type: text
-  name: severity
-  label: severity
+- name: severity
+  type: select
+  default: notice
+  config:
+    required: true
+    options:
+    - notice
+    - disrupted
+    - down
+    source:
+      type: simple
+      section: configuration
+      file: config.yml
+      path: params
+  label: Sévérité
 - type: list
   name: affected
   label: Service impacté
