@@ -72,4 +72,5 @@ fields:
   label: Information
   hidden: true
 pages:
+- content/issues/avis-de-maintenance-2.*.md
 - content/issues/test3.*.md
