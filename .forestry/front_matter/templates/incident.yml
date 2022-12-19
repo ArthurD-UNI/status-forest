@@ -12,9 +12,19 @@ fields:
   label: Date
   config:
     required: true
+- name: informational
+  type: boolean
+  label: Maintenance
+- name: pin
+  type: boolean
+  label: Mettre en avant
+  description: Cocher cette case pour mettre en avant ce message.
 - type: boolean
   name: resolved
   label: Résolu
+  showOnly:
+    field: informational
+    value: false
 - type: datetime
   name: resolvedWhen
   label: Date de résolution
@@ -47,10 +57,19 @@ fields:
       section: configuration
       file: config.yml
       path: params
-- type: text
-  name: section
-  label: section
+- name: section
+  type: select
+  default: issue
   config:
     required: true
+    options:
+    - issue
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Information
+  hidden: true
 pages:
 - content/issues/test3.*.md
