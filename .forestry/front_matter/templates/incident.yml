@@ -40,6 +40,13 @@ fields:
 - type: list
   name: affected
   label: Service impacté
+  config:
+    use_select: true
+    source:
+      type: documents
+      section: configuration
+      file: config.yml
+      path: params
 - type: text
   name: section
   label: section
