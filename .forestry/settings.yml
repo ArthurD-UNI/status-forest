@@ -18,6 +18,8 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: "*.md"
+  templates:
+  - incident
 upload_dir: static/img
 public_path: "/uploads"
 front_matter_path: ''
