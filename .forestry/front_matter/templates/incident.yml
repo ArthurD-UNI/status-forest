@@ -52,3 +52,5 @@ fields:
   label: section
   config:
     required: true
+pages:
+- content/issues/test3.*.md
